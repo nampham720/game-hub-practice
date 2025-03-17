@@ -34,7 +34,7 @@ const iconMap: { [key: string] : IconType } = {
   return (
     <HStack margin={1}>
       {platforms.map((platflorm) => (
-        <Icon as={iconMap[platflorm.slug]} color='gray.500'/>
+        <Icon key={platflorm.id} as={iconMap[platflorm.slug]} color='gray.500'/>
       ))}
     </HStack>
   );
